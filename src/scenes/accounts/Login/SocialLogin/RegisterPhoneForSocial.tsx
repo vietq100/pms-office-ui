@@ -1,3 +1,4 @@
+import './index.less'
 import { Button, Col, Input, Row, Form } from 'antd'
 import AccountStore from '../../../../stores/accountStore'
 import AuthenticationStore from '../../../../stores/authenticationStore'

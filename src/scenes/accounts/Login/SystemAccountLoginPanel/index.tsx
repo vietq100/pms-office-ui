@@ -1,3 +1,4 @@
+import './index.less'
 
 import * as React from 'react'
 
@@ -118,7 +119,7 @@ class SystemAccountLoginPanel extends React.Component<ILoginProps> {
                     <h2 className="ml-1">{L('LOGIN_WITH_ACCOUNT')}</h2>
                   </div>
                   <Button
-                    type="ghost"
+                    type="default" ghost
                     className="position-absolute"
                     icon={<LeftOutlined style={{ fontSize: '16px' }} />}
                     onClick={() => this.props.handleBack()}

@@ -1,9 +1,11 @@
 import * as React from 'react'
 import Row from 'antd/lib/grid/row'
 import Col from 'antd/lib/grid/col'
+import './ActionFooter.less'
 
 export interface IActionFooterProps {
   show?: boolean
+  children?: React.ReactNode
 }
 
 const ActionFooter: React.FunctionComponent<IActionFooterProps> = ({ show, ...props }) => {

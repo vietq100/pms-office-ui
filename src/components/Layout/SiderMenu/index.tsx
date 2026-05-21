@@ -1,3 +1,4 @@
+import './index.less'
 
 import { Layout, Menu } from 'antd'
 import { isGranted } from '../../../lib/abpUtility'

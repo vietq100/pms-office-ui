@@ -11,6 +11,7 @@ import AppConst from '@lib/appconst'
 import Col from 'antd/lib/grid/col'
 import Row from 'antd/lib/grid/row'
 import orderBy from 'lodash/orderBy'
+import './roleModal.less'
 
 const { formVerticalLayout } = AppConst
 const TabPane = Tabs.TabPane

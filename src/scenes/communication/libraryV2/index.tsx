@@ -174,7 +174,7 @@ class LibraryPublicV2 extends AppComponentListBase<ILibrariesProps, ILibrariesSt
       await libraryStore.createLibrary()
     } else {
       await libraryStore.get(e)
-      projectStore.buildingOptions = [...(libraryStore.editFolder?.buildings || [])] || []
+      projectStore.buildingOptions = [...(libraryStore.editFolder?.buildings || [])]
     }
 
     this.setState({ modalFolderVisible: !this.state.modalFolderVisible })

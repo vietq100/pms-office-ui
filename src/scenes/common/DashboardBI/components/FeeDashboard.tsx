@@ -140,7 +140,7 @@ const FeeDashboard = (props: Props) => {
                 datalabels: {
                   color: 'white',
                   display: function (context) {
-                    return (context.dataset.data[context.dataIndex] || 0) > 1000000
+                    return (context.dataset.data[context.dataIndex] as number || 0) > 1000000
                   },
                   font: {
                     size: 10

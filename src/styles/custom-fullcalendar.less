@@ -1,0 +1,80 @@
+@import './variable';
+
+.rbc-event {
+  background: none !important;
+  .booking-slot {
+    color: #1e4f8ba6;
+    display: flex;
+    align-items: baseline;
+    font-size: 12px;
+    justify-content: center;
+    margin-right: 0;
+  }
+}
+
+.rbc-month-view {
+  .rbc-day-bg {
+    cursor: pointer;
+  }
+  .rbc-event {
+    background: none !important;
+    padding: 0.25rem;
+    .booking-slot {
+      justify-content: center;
+    }
+  }
+
+  .rbc-event:focus {
+    outline: none !important;
+  }
+}
+
+/// WEEK
+.rbc-time-view {
+  .rbc-day-slot .rbc-events-container {
+    margin: 0 !important;
+    .rbc-event-content {
+      width: 100%;
+      height: 100%;
+      margin: 5px !important;
+      .booking-slot {
+        height: 100%;
+        margin-right: 10px;
+      }
+    }
+  }
+  .rbc-event {
+    background: none !important;
+    border: 0;
+    padding: 0;
+    .rbc-event-label {
+      display: none;
+      padding: 0.1rem;
+    }
+  }
+
+  .alert {
+    padding: 0.1rem;
+  }
+}
+
+.rbc-agenda-view {
+  .alert {
+    margin-bottom: 0;
+    padding: 0.25rem;
+  }
+}
+
+.rbc-today {
+  background-color: #e0f6fd;
+}
+
+.rbc-agenda-empty {
+  padding: 1rem;
+}
+
+.date-in-past {
+  width: 14.3%;
+  background: rgba(230, 230, 230, 0.5);
+  cursor: default !important;
+}

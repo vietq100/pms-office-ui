@@ -1,3 +1,4 @@
+import './PublicLayout.less'
 import { Route, Routes } from 'react-router-dom'
 import DocumentTitle from 'react-document-title'
 import { publicLayout } from './Router/router.config'

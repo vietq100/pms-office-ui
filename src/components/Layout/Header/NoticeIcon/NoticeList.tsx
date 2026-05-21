@@ -4,6 +4,7 @@ import React from 'react'
 import classNames from 'classnames'
 import { NoticeIconData } from './index'
 import Icon from '@ant-design/icons'
+import './NoticeList.less'
 
 export interface NoticeIconTabProps {
   count?: number
@@ -22,7 +23,7 @@ export interface NoticeIconTabProps {
   onViewMore?: (e: any) => void
   icon?: any
 }
-const NoticeList: React.SFC<NoticeIconTabProps> = ({
+const NoticeList: React.FC<NoticeIconTabProps> = ({
   data = [],
   onClick,
   onClear,

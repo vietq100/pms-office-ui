@@ -14,6 +14,7 @@ import { portalLayouts } from '../../../../components/Layout/Router/router.confi
 import MultiLanguageInput from '@components/Inputs/MultiLanguageInput'
 import debounce from 'lodash/debounce'
 import { PlusCircleOutlined } from '@ant-design/icons/lib'
+import './ContractCategoryDetail.less'
 import ContractCategoryModal from '@scenes/projects/ContractCategory/components/ContractCategoryModal'
 import NumberInput from '@components/Inputs/NumberInput'
 import withRouter from '@components/Layout/Router/withRouter'

@@ -1,5 +1,4 @@
-import { Avatar, notification, Tooltip, Select, Tag } from 'antd'
-import { antdStaticHelper } from '@lib/antdStaticHelper'
+import { Avatar, Modal, notification, Tooltip, Select, Tag } from 'antd'
 import { cookieKeys, notificationTypes, emailRegex, moduleAvatar, themeByEvent } from './appconst'
 import { ManOutlined, WomanOutlined } from '@ant-design/icons/lib'
 import { L } from '@lib/abpUtility'
@@ -145,7 +144,7 @@ export const removeDuplicateObjectInArray = (array: any[], key: string) => {
   return result
 }
 export const notifyError = (title: string, content: string) => {
-  antdStaticHelper.modal.error({ title, content })
+  Modal.error({ title, content })
 }
 
 export const notifySuccess = (message: string, description: string) => {

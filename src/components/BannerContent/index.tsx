@@ -1,4 +1,5 @@
 import React from 'react'
+import './banner-content.less'
 
 type BannerContentProps = {
   image: JSX.Element | React.ReactElement

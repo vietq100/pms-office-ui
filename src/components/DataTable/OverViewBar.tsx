@@ -3,6 +3,7 @@ import { L } from '@lib/abpUtility'
 import { hexToRGB } from '@lib/helper'
 import { Card, Collapse, Popover } from 'antd'
 import Paragraph from 'antd/lib/typography/Paragraph'
+import './DataTable.less'
 
 type Props = {
   data: any[]

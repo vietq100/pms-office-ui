@@ -91,7 +91,7 @@ class VehicleHistory extends AppComponentListBase<IParkingProps> {
           <Table
             size="middle"
             className="custom-ant-table"
-            rowKey={(record) => record.id}
+            rowKey="id"
             columns={columns}
             pagination={false}
           />

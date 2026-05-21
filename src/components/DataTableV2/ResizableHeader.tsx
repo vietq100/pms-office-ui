@@ -1,4 +1,5 @@
 import { Resizable } from 'react-resizable'
+import './resizable-header.less'
 
 const ResizeableHeader = (props) => {
   const { onResize, width, ...restProps } = props

@@ -1,0 +1,12 @@
+{
+  "extends": [],
+  "linterOptions": {
+    "exclude": ["config/**/*.js", "node_modules/**/*.ts", "coverage/lcov-report/*.js"]
+  },
+  "rules": {
+    "react/prop-types": 0,
+    "semicolon": [true, "never"],
+    "no-invalid-template-strings": [false],
+    "no-template-curly-in-string": "off"
+  }
+}

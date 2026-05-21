@@ -136,7 +136,7 @@ const NotificationProcess = (props: Props) => {
             size="middle"
             // scroll={{ y: window.innerHeight - 540 }}
             className="custom-ant-table"
-            rowKey={(record) => record.id}
+            rowKey="id"
             columns={column}
             pagination={false}
             loading={props.handoverStore.isLoading}

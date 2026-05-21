@@ -413,7 +413,7 @@ class StaffCreate extends AppComponentBase<IStaffFormProps> {
                 <Col sm={{ span: 24, offset: 0 }}>
                   <Table
                     size="middle"
-                    rowKey={(record) => record.project.id}
+                    rowKey={(record: any) => record.project.id}
                     columns={columns}
                     dataSource={(staffProjectRoles || []).map((item) => item)}
                     scroll={{ y: 400 }}

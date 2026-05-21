@@ -39,7 +39,7 @@ function FeeAuditLog(props) {
       <Table
         size="middle"
         className="custom-ant-table"
-        rowKey={(record) => record.id}
+        rowKey="id"
         pagination={false}
         dataSource={data}
         columns={dataColumns}

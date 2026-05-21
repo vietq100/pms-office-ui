@@ -8,6 +8,7 @@ import paymentService from '@services/fee/paymentService'
 import withRouter from '@components/Layout/Router/withRouter'
 import { FormInstance } from 'antd/es/form'
 import { appPermissions } from '@lib/appconst'
+import './index.less'
 import NumberInput from '@components/Inputs/NumberInput'
 
 const rules = {

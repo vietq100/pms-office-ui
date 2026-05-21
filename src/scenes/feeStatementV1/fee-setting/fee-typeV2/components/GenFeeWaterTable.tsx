@@ -2,6 +2,7 @@ import AppComponentBase from '@components/AppComponentBase'
 import { Button, Form, Select, InputNumber, Col, Row, Input } from 'antd'
 
 import { inject, observer } from 'mobx-react'
+import '@scenes/feeStatement/receipt/components/receipt.less'
 
 import { MinusCircleOutlined } from '@ant-design/icons'
 

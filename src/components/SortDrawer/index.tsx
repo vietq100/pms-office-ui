@@ -4,6 +4,7 @@ import { L, LNotification } from '@lib/abpUtility'
 import { notifySuccess } from '@lib/helper'
 import Button from 'antd/lib/button'
 import { DragDropContext, Droppable, Draggable, DropResult } from '@hello-pangea/dnd'
+import './index.less'
 
 const reorder = (list, startIndex, endIndex) => {
   const result = Array.from(list)

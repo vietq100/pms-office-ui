@@ -13,6 +13,7 @@ import { IAssetTypeModel } from '@models/asset/AssetTypeModel'
 import { AssetTypeList } from './components/AssetTypeList'
 import { AssetTypeModal } from './components/AssetTypeModal'
 import { IAssetProps, IAssetState } from './assetType'
+import './assetTypes.less'
 import debounce from 'lodash/debounce'
 import NoRole from '@components/ComponentNoRole'
 

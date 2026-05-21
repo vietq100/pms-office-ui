@@ -5,6 +5,7 @@ import HandoverStore from '@stores/handover/handoverStore'
 import Card from 'antd/es/card'
 import Collapse from 'antd/lib/collapse/Collapse'
 import React from 'react'
+import './statistic-item.less'
 
 type Props = {
   handoverStore: HandoverStore

@@ -1,3 +1,4 @@
+import './index.less'
 import { useNavigate } from 'react-router'
 import { isGranted, L, LMainMenu } from '@lib/abpUtility'
 import getMenuItem from '../../MenuItem'

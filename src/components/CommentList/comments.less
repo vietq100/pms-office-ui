@@ -1,0 +1,123 @@
+@import '../../styles/variable';
+
+.comment-list {
+  .ant-comment-content {
+    background: #455f78;
+    color: white;
+    padding: 10px;
+    border-radius: 20px;
+    flex: inherit;
+    .ant-comment-content-author {
+      .ant-comment-content-author-name {
+        color: rgba(255, 255, 255, 0.65) !important;
+      }
+      .ant-comment-content-author-time {
+        color: rgba(255, 255, 255, 0.25) !important;
+      }
+    }
+  }
+  .ant-upload-picture-card-wrapper {
+    padding-left: 53px;
+    .ant-upload-list-picture-card-container {
+      width: 80px;
+      height: 80px;
+
+      .ant-upload-list-item {
+        width: 80px;
+        height: 80px;
+      }
+    }
+  }
+
+  .comment-right {
+    .ant-comment-inner {
+      flex-direction: row-reverse;
+
+      .ant-comment-avatar {
+        margin-right: 0;
+        margin-left: 12px;
+      }
+
+      .ant-comment-content {
+        background: #e6eaeb;
+        color: black;
+      }
+
+      .ant-comment-content-author {
+        justify-content: flex-end;
+        .ant-comment-content-author-name {
+          color: rgba(0, 0, 0, 0.65) !important;
+        }
+        .ant-comment-content-author-time {
+          color: rgba(0, 0, 0, 0.25) !important;
+          padding-right: 0;
+        }
+      }
+
+      .ant-comment-content-detail {
+        text-align: right;
+      }
+    }
+    .ant-upload-picture-card-wrapper {
+      justify-content: flex-end;
+      padding-right: 45px;
+      padding-left: 0;
+    }
+  }
+
+  .ant-comment-avatar img {
+    width: 100%;
+    height: 100%;
+  }
+}
+
+.ant-comment-content-detail {
+  .btn-attachment {
+    line-height: 42px;
+    position: relative;
+    display: inline-block;
+    font-weight: 400;
+    white-space: nowrap;
+    text-align: center;
+    box-shadow: 0 2px 0 rgba(0, 0, 0, 0.015);
+    cursor: pointer;
+    transition: all 0.3s cubic-bezier(0.645, 0.045, 0.355, 1);
+    touch-action: manipulation;
+    height: 44px;
+    padding: 0 15px;
+    font-size: 14px;
+    color: rgba(0, 0, 0, 0.65);
+    background: #fff none;
+    border: 1px solid @border-color;
+    border-radius: 24px;
+  }
+  .ant-upload-list-item-name {
+    padding-left: 0 !important;
+  }
+  .ant-input {
+    padding-left: 45px;
+  }
+}
+
+.wrap-comment-editor {
+  .ant-comment-inner {
+    padding-bottom: 0 !important;
+  }
+  .ant-comment-avatar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    z-index: 1;
+    height: 44px;
+    width: 40px;
+    .ant-avatar {
+      width: 34px;
+      height: 34px;
+      img {
+        width: 100%;
+        height: 100%;
+      }
+    }
+  }
+}

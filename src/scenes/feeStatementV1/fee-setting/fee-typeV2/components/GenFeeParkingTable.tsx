@@ -1,6 +1,7 @@
 import AppComponentBase from '@components/AppComponentBase'
 import { Form, Col, Row, Button, Input } from 'antd'
 import { inject, observer } from 'mobx-react'
+import '@scenes/feeStatement/receipt/components/receipt.less'
 import { validateMessages } from '@lib/validation'
 import CurrencyInput from '@components/Inputs/CurrencyInput'
 import PercentInput from '@components/Inputs/PercentInput'

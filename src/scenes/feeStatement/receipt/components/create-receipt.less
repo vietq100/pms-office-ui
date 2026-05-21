@@ -1,0 +1,44 @@
+@import '../../../../styles/variable';
+.create-receipt {
+  .ant-row {
+    height: auto;
+    padding: 0 8px;
+    margin-bottom: 10px;
+  }
+  background-color: white;
+  padding: 8px 8px;
+  height: calc(100vh - 335px);
+  overflow-y: auto;
+  margin-top: 8px;
+
+  .receipt-group-package {
+    margin-bottom: 0;
+  }
+}
+
+.create-receipt-footer {
+  background-color: white;
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  padding: 16px;
+  .ant-col {
+    align-self: center;
+  }
+  .total {
+    color: @primary-color;
+  }
+  .price {
+    width: 150px;
+    display: inline-block;
+  }
+  .ant-divider-horizontal {
+    margin: 16px 0 !important;
+  }
+}
+
+.create-receipt-content {
+  position: relative;
+  height: calc(100vh - 100px);
+}

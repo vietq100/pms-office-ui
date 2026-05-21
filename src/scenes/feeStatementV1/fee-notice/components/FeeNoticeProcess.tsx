@@ -4,6 +4,7 @@ import { Button, Col, Dropdown, Form, Input, Menu, Modal, Popover, Row, Select, 
 
 import { inject, observer } from 'mobx-react'
 import Stores from '@stores/storeIdentifier'
+import '@scenes/feeStatement/receipt/components/receipt.less'
 import { L, LError, LNotification } from '@lib/abpUtility'
 import AppConst, { appPermissions } from '@lib/appconst'
 import withRouter from '@components/Layout/Router/withRouter'

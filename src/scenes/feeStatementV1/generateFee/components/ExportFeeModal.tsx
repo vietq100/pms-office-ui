@@ -118,7 +118,7 @@ const ExportFeeModal = inject(
             className="custom-ant-table custom-ant-row"
             columns={columns()}
             loading={props.feeGenerateStore.isLoading}
-            rowKey={(record) => record.id}
+            rowKey="id"
             scroll={{ x: 'max-content' }}
             pagination={false}
             dataSource={props.feeGenerateStore?.pagedBatchResultPdf?.items || []}

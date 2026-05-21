@@ -5,6 +5,7 @@ import { L } from '@lib/abpUtility'
 import { toJS } from 'mobx'
 import { Card } from 'antd'
 import QRCode from 'qrcode.react'
+import './assetQRCode.less'
 import AssetStore from '@stores/facility/assetStore'
 
 interface AssetQRCodeProps {

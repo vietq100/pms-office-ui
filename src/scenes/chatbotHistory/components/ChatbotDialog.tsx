@@ -13,6 +13,7 @@ import { renderDocuments } from '@components/FileUpload/FileDocuments'
 import UploadButton from '@components/FileUpload/UploadButton'
 import { CloseOutlined, PaperClipOutlined, SendOutlined } from '@ant-design/icons'
 import ChatbotIcon from '@assets/icons/chatbot.svg'
+import './comments.less'
 import ChatbotStore from '@stores/chatbotHistory/chatbotStore'
 
 interface ChatbotDialogProps {

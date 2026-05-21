@@ -6,6 +6,7 @@ import { L, LError } from '@lib/abpUtility'
 import { isValidEmail } from '@lib/helper'
 import appConsts from '@lib/appconst'
 import isEqual from 'lodash/isEqual'
+import './tags-input.less'
 
 const { dataType } = appConsts
 

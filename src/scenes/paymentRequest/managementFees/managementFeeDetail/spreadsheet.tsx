@@ -1,5 +1,6 @@
 import * as React from 'react'
 import { Button, Col, DatePicker, Form, Row } from 'antd'
+import './spreadsheet.less'
 import { L } from '@lib/abpUtility'
 import { CheckCircleFilled, CloseCircleFilled, EditFilled } from '@ant-design/icons'
 import { appStatusColors, dateFormat } from '@lib/appconst'

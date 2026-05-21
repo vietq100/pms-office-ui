@@ -13,6 +13,7 @@ import { portalLayouts } from '@components/Layout/Router/router.config'
 import withRouter from '@components/Layout/Router/withRouter'
 import rules from './validation'
 import CardbuidingStore from '@stores/cardBuilding/cardbuidingStore'
+import './style.less'
 import { capitalizeWords } from '@lib/helper'
 
 const { formVerticalLayout, listCardsStatus, listTenantTypeUseVehicle, listVehicleParkingType, listCardType } =

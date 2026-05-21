@@ -1,3 +1,4 @@
+import './index.less'
 import 'famfamfam-flags/dist/sprite/famfamfam-flags.css'
 
 import * as React from 'react'

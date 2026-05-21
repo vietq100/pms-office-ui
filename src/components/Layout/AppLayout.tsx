@@ -1,3 +1,4 @@
+import './AppLayout.less'
 
 import * as React from 'react'
 

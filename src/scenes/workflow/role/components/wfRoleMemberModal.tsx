@@ -3,6 +3,7 @@ import { L } from '../../../../lib/abpUtility'
 import MemberItem from './memberItem'
 import { IUserModel } from '../../../../models/User/IUserModel'
 import { useState, useRef, useEffect } from 'react'
+import './wfRoleMember.less'
 import { isEqual } from 'lodash'
 import staffService from '../../../../services/member/staff/staffService'
 const { Option } = Select

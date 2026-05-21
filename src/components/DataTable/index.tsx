@@ -2,6 +2,7 @@ import * as React from 'react'
 import { Button, Col, Pagination, Row } from 'antd'
 import { FilterFilled, PlusOutlined, ReloadOutlined } from '@ant-design/icons'
 import { isGranted, L } from '../../lib/abpUtility'
+import './DataTable.less'
 
 export interface IDataTableProps {
   title?: string
@@ -9,7 +10,7 @@ export interface IDataTableProps {
   onCreate?: () => void
   pagination?: any
   createPermission?: string
-  actionGroups?: () => void
+  actionGroups?: () => React.ReactNode
   onRefresh?: () => void
   showChangePageSize?: boolean
   filterComponent?: any
@@ -17,6 +18,8 @@ export interface IDataTableProps {
   extraFilterComponent?: React.ReactNode
   actionAfterTitle?: any
   noneFilter?: boolean
+  children?: React.ReactNode
+  renderActions?: () => React.ReactNode
 }
 
 const DataTable: React.FunctionComponent<IDataTableProps> = ({

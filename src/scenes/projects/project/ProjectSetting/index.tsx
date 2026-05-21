@@ -12,6 +12,7 @@ import TagsInput from '@components/Inputs/TagsInput'
 import ProjectStore from '@stores/project/projectStore'
 import http from '@services/httpService'
 import rules from '../components/project.validation'
+import './style.less'
 
 const { dayOfWeek, formVerticalLayout, dataType } = AppConsts
 const { Option } = Select

@@ -1,0 +1,51 @@
+@import '../../../styles/variable';
+
+.wrap-select-box {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  .select-box-item {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    flex: 1;
+    border: 1px solid @border-color;
+    margin: 0 5px;
+    border-radius: 8px;
+    padding: 8px 5px;
+    cursor: pointer;
+
+    .label {
+      text-align: center;
+    }
+
+    &.selected {
+      border-color: @border-primary-color;
+    }
+    &:first-child {
+      margin-left: 0;
+    }
+    &:last-child {
+      margin-right: 0;
+    }
+  }
+
+  &.no-border {
+    display: inline-flex;
+    justify-content: normal;
+    .select-box-item {
+      border: 0 solid @border-color;
+      padding: 4px 5px;
+      border-radius: 0;
+      flex: auto;
+      color: @text-light-color;
+
+      &.selected {
+        color: @text-color;
+        font-weight: bold;
+        border-bottom: 2px solid @text-light-color;
+      }
+    }
+  }
+}

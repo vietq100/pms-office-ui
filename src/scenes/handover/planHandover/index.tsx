@@ -19,6 +19,7 @@ import { EllipsisOutlined, SettingOutlined } from '@ant-design/icons'
 import { Col, DatePicker, Dropdown, Menu, Modal, Row } from 'antd'
 import Search from 'antd/lib/input/Search'
 import Select from 'antd/lib/select'
+import './index.less'
 import NoRole from '@components/ComponentNoRole'
 const { activeStatus } = AppConsts
 type Props = {

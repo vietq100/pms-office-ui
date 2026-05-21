@@ -144,7 +144,7 @@ const BookingDashboard = (props: Props) => {
                 datalabels: {
                   color: 'white',
                   display: function (context) {
-                    return (context.dataset.data[context.dataIndex] || 0) > 1
+                    return (context.dataset.data[context.dataIndex] as number || 0) > 1
                   },
                   font: {
                     size: 12

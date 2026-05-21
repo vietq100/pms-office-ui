@@ -14,6 +14,7 @@ import ReactToPrint from 'react-to-print'
 import NoRole from '@components/ComponentNoRole'
 import WrapPageScroll from '@components/WrapPageScroll'
 import { portalLayouts } from '@components/Layout/Router/router.config'
+import './receipt.less'
 
 const { Title } = Typography
 const { authorization } = AppConsts

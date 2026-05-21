@@ -13,6 +13,7 @@ import NoRole from '@components/ComponentNoRole'
 import getColumns from './columns'
 import PositionApprovalStore from '@stores/approvalWorkflow/positionApproval/positionApprovalStore'
 import PositionApprovalModal from './components/PositionApprovalModal'
+import './style.less'
 import CompanyStore from '@stores/project/companyStore'
 
 const { activeStatus, listPositionType } = AppConst

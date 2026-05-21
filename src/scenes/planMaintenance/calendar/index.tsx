@@ -12,6 +12,7 @@ import PlanMaintenanceCalendarStore from '@stores/planMaintenance/planMaintenanc
 import AssetTypeStore from '@stores/facility/assetTypeStore'
 import TeamStore from '@stores/team/teamStore'
 import { portalLayouts } from '@components/Layout/Router/router.config'
+import './calendar.less'
 import DataTable from '@components/DataTable'
 import dayjs from 'dayjs'
 import { renderDateTime } from '@lib/helper'

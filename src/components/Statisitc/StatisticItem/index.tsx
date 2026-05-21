@@ -1,3 +1,4 @@
+import './statistic-item.less'
 import { Card } from 'antd'
 import { formatNumber, hexToRGB } from '@lib/helper'
 import Row from 'antd/lib/grid/row'

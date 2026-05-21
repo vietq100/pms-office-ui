@@ -21,6 +21,7 @@ import debounce from 'lodash/debounce'
 import { CustomEvent, DateCell, ToolbarCalendar, calendarViewNames } from '@components/Calendar'
 import { notifyInfo } from '@lib/helper'
 import { Spin } from 'antd'
+import './ReservationCalendar.less'
 import { appPermissions } from '@lib/appconst'
 import NoRole from '@components/ComponentNoRole'
 

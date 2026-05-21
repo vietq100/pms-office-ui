@@ -166,7 +166,7 @@ const FeedbackRatingDashboard = (props: Props) => {
               plugins: {
                 datalabels: {
                   display: function (context) {
-                    return (context.dataset.data[context.dataIndex] || 0) > 1
+                    return (context.dataset.data[context.dataIndex] as number || 0) > 1
                   },
                   anchor: 'center',
                   font: {

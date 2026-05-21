@@ -1,3 +1,4 @@
+import './index.less'
 import { Button, Col, Input, Row, Form, Card } from 'antd'
 import { loginSteps } from '@lib/appconst'
 import { useEffect, useState } from 'react'

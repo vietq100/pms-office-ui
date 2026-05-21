@@ -3,6 +3,7 @@ import { inject, observer } from 'mobx-react'
 import Stores from '../../../../stores/storeIdentifier'
 import get from 'lodash/get'
 import EventStore from '../../../../stores/communication/eventStore'
+import './event-detail.less'
 import { renderDate, renderDateTime } from '@lib/helper'
 import {
   ClockCircleOutlined,

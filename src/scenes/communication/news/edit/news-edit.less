@@ -1,0 +1,70 @@
+// @import '~antd/dist/antd.less';
+
+.news-edit-container {
+  .news-edit-banner {
+    position: relative;
+    background: white;
+    padding: 16px;
+    .no-photo {
+      object-fit: contain !important;
+    }
+    img {
+      height: 280px;
+      //object-fit: cover;
+      width: 100%;
+    }
+  }
+  .news-edit-content {
+    padding: 16px;
+    background: white;
+  }
+
+  .avatar-uploader.ant-upload-picture-card-wrapper {
+    position: absolute;
+    bottom: 0;
+  }
+  .avatar-uploader > .ant-upload {
+    width: 114px;
+    height: 80px;
+    position: absolute;
+    bottom: 10px;
+    right: 42px;
+    background: rgba(225, 225, 225, 0.5);
+  }
+
+  .news-edit-actions {
+    button + button {
+      margin-left: 8px;
+    }
+  }
+
+  .error {
+    padding-right: 4px;
+    color: @error-color;
+  }
+
+  .news-editor {
+    .ck.ck-toolbar.ck-toolbar_grouping,
+    .ck.ck-content.ck-editor__editable.ck-rounded-corners.ck-editor__editable_inline {
+      border-color: @border-color-base;
+    }
+
+    &.error {
+      .ck.ck-toolbar.ck-toolbar_grouping,
+      .ck.ck-content.ck-editor__editable.ck-rounded-corners.ck-editor__editable_inline {
+        border-color: @error-color;
+      }
+    }
+  }
+
+  .ant-radio-group label {
+    z-index: unset !important;
+  }
+
+  #newsForm_eventType[aria-checked='false'] {
+    background-color: #13c2c2;
+  }
+  #newsForm_eventType {
+    font-weight: bold;
+  }
+}

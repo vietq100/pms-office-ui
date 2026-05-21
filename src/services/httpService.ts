@@ -20,16 +20,13 @@ const http = axios.create({
 
 http.interceptors.request.use(
   function (config) {
-    if (!config.headers) {
-      config.headers = {}
-    }
     if (abp.auth.getToken()) {
-      config.headers.common['Authorization'] = 'Bearer ' + abp.auth.getToken()
+      config.headers['Authorization'] = 'Bearer ' + abp.auth.getToken()
     }
 
-    config.headers.common['.AspNetCore.Culture'] = abp.utils.getCookieValue('Abp.Localization.CultureName')
-    config.headers.common['Abp.TenantId'] = abp.multiTenancy.getTenantIdCookie()
-    config.headers.common['ProjectId'] = localStorage.getItem(authorization.projectId)
+    config.headers['.AspNetCore.Culture'] = abp.utils.getCookieValue('Abp.Localization.CultureName')
+    config.headers['Abp.TenantId'] = abp.multiTenancy.getTenantIdCookie()
+    config.headers['ProjectId'] = localStorage.getItem(authorization.projectId)
     config.params = {
       ...(config.params || {}),
       culture: abp.utils.getCookieValue('Abp.Localization.CultureName') || 'vi'

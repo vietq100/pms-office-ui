@@ -1,6 +1,7 @@
 import React, { useEffect, useRef, useState } from 'react'
 import { Tag } from 'antd'
 import isEqual from 'lodash/isEqual'
+import './booking-slot-select.less'
 import { BookingSlotModel } from '@models/Booking/reservationModel'
 import { formatCurrency, renderTime } from '@lib/helper'
 import moment from 'moment-timezone/moment-timezone'

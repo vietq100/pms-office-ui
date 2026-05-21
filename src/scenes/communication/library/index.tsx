@@ -139,7 +139,7 @@ class Libraries extends AppComponentListBase<ILibrariesProps, ILibrariesState> {
       await libraryStore.createLibrary(filters.projectIds)
     } else {
       await libraryStore.get(id)
-      projectStore.buildingOptions = [...(libraryStore.editFolder?.buildings || [])] || []
+      projectStore.buildingOptions = [...(libraryStore.editFolder?.buildings || [])]
     }
 
     this.setState({ libraryId: id })

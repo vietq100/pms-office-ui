@@ -1,3 +1,4 @@
+import './index.less'
 
 import * as React from 'react'
 
@@ -114,7 +115,7 @@ class ForgotPassword extends React.Component<IForgotPasswordProps> {
             <Card className={this.state.isMobile ? 'card-mobie' : 'card-web'}>
               <div style={{ textAlign: 'center' }}>
                 <Button
-                  type="ghost"
+                  type="default" ghost
                   className="position-absolute"
                   icon={<LeftOutlined style={{ fontSize: '14px' }} />}
                   onClick={() => this.backToLogin()}

@@ -20,6 +20,7 @@ import ProjectStore from '@stores/project/projectStore'
 import { portalLayouts } from '@components/Layout/Router/router.config'
 import ContractorEmployeeList from '../../contractorEmployee'
 import Paragraph from 'antd/es/typography/Paragraph'
+import '../../../../styles/custom-ant.less'
 import columnsDocument from './columnsDocument'
 import { v4 as uuid } from 'uuid'
 import {

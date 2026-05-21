@@ -7,7 +7,8 @@ export interface IFilterProps {
   title?: string
   showHeader?: boolean
   handleRefresh?: () => void
-  actionGroups?: () => void
+  actionGroups?: () => React.ReactNode
+  children?: React.ReactNode
 }
 
 const Filter: React.FunctionComponent<IFilterProps> = ({

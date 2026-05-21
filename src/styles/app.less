@@ -1,0 +1,294 @@
+@import (once) url('variable');
+@import (once) url('layout');
+@import '~react-big-calendar/lib/css/react-big-calendar.css';
+@import '~animate.css';
+@import 'custom-fullcalendar';
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: fade(@text-color, 80%);
+}
+label {
+  color: fade(@text-color, 100%) !important;
+}
+
+button {
+  color: fade(@text-color, 85%);
+}
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus,
+input:-webkit-autofill:active {
+  -webkit-box-shadow: 0 0 0 30px white inset !important;
+}
+/* Scrollbar */
+::-webkit-scrollbar {
+  width: 5px;
+  height: 5px;
+}
+/* Track */
+::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 5px rgb(255, 255, 255);
+  border-radius: 10px;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: rgba(138, 137, 137, 0.514);
+  border-radius: 10px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #cec0cc;
+}
+::placeholder {
+  color: @place-holder-text !important;
+}
+
+/* Customize website's scrollbar like Mac OS
+Not supports in Firefox and IE */
+
+/* total width */
+body::-webkit-scrollbar {
+  background-color: #fff;
+  width: 16px;
+}
+
+/* background of the scrollbar except button or resizer */
+body::-webkit-scrollbar-track {
+  background-color: #fff;
+}
+
+/* scrollbar itself */
+body::-webkit-scrollbar-thumb {
+  background-color: #babac0;
+  border-radius: 16px;
+  border: 4px solid #fff;
+}
+
+/* set button(top and bottom of the scrollbar) */
+body::-webkit-scrollbar-button {
+  display: none;
+}
+
+/* COLORS */
+.color-error {
+  color: @color-error !important;
+}
+.color-success {
+  color: @color-success !important;
+}
+.color-primary {
+  color: @primary-color !important;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.footer {
+  position: sticky;
+  left: 0;
+  margin-top: 16px;
+  bottom: 64px;
+  width: 100%;
+  text-align: center;
+}
+
+/* HEADER */
+.avatar-uploader {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 10px;
+  .ant-upload-select-picture-card {
+    margin-bottom: 0 !important;
+    margin-right: 0 !important;
+  }
+}
+
+/* STAFF */
+#staff-detail,
+#shop-owner-detail,
+#resident-detail {
+  .cover-avatar {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+    filter: blur(2px);
+  }
+}
+
+/* LIBRARY */
+#library-page {
+  height: 100%;
+  .col-folder {
+    .wrap-folder-list {
+      height: 100%;
+      //background: transparent;
+      box-shadow: none;
+      .ant-card-body {
+        padding: 10 10px;
+        .txt-search-library {
+          .ant-input-group-addon {
+            background: #ededed;
+            border: 0;
+          }
+          .ant-input {
+            border: 0 !important;
+            background: #ededed;
+          }
+        }
+      }
+      .folder-item {
+        border-bottom: 0;
+        min-height: 54px;
+        flex-direction: column;
+        padding: 0;
+        border-bottom: 1px solid @border-color;
+        > .ant-row {
+          width: 100%;
+          //border-radius: 24px;
+          padding: 8px 0;
+          .col-info {
+            width: calc(100% - 90px);
+          }
+          .wrap-info {
+            cursor: pointer;
+          }
+        }
+        .wrap-actions {
+          display: none;
+        }
+        &:hover {
+          .wrap-actions {
+            display: inline-block;
+          }
+        }
+        &.active {
+          > .ant-row {
+            background: rgba(88, 176, 187, 0.08);
+          }
+        }
+      }
+    }
+
+    .folder-footer {
+      margin-top: 15px;
+      .btn-primary-outlined {
+        width: 100%;
+      }
+    }
+  }
+  .document-item {
+    box-shadow: 0 4px 24px rgba(110, 186, 196, 0.08);
+    .ant-card {
+      box-shadow: 0 4px 24px rgba(110, 186, 196, 0.08);
+      border-radius: 24px;
+      .wrap-document-info {
+        display: flex;
+        border-bottom: 1px solid #ebebeb;
+        .document-icon {
+          padding: 12px;
+          text-align: center;
+          font-size: 2rem;
+        }
+        .document-info {
+          padding: 12px 12px 12px 0;
+        }
+      }
+    }
+  }
+}
+
+/* UPLOAD TOOL */
+.import-tool {
+  .ant-upload {
+    width: 100%;
+    display: flex;
+    align-items: center;
+  }
+}
+
+/* BOOKING */
+.booking-slot {
+  &.available {
+    background: white !important;
+    border: 1px dashed #b6bcd0 !important;
+    cursor: pointer;
+  }
+  &.unavailable {
+    border: 1px solid #b6bcd0 !important;
+    background: #b6bcd0 !important;
+    color: white !important;
+    cursor: default !important;
+    &:hover {
+      color: white !important;
+    }
+  }
+  &.maintenance-slot {
+    border: none !important;
+    color: red !important;
+    cursor: default !important;
+  }
+  &.selected {
+    border: 1px solid @primary-color !important;
+    background: @primary-color !important;
+    color: white;
+  }
+}
+
+/* SLA CONFIGURATION */
+.sla-container {
+  .ant-tabs-tab {
+    border: none !important;
+  }
+}
+
+section.ant-layout {
+  height: 100vh !important;
+  // height: 125vh !important; //change 100vh to 125vh to fix 1.25 zoom screen ratio
+  overflow: hidden;
+}
+
+// Print CSS ===
+@media all {
+  .page-break {
+    display: none;
+  }
+}
+
+@media print {
+  html,
+  body {
+    height: initial !important;
+    overflow: initial !important;
+    print-color-adjust: exact;
+    -webkit-print-color-adjust: exact;
+  }
+}
+
+@media print {
+  .page-break {
+    margin-top: 1rem;
+    display: block;
+    page-break-before: auto;
+  }
+}
+
+@page {
+  size: auto;
+  margin: 20mm;
+}
+
+// Print CSS ===

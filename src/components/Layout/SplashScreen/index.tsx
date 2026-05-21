@@ -1,3 +1,4 @@
+import './index.less'
 import moment from 'moment-timezone'
 import React, { Component, useEffect, useState } from 'react'
 import abpUserConfigurationService from '@services/abpUserConfigurationService'

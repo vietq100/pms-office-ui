@@ -1,8 +1,16 @@
-// HeaderDropdown styles
-.container {
-  :global {
-    .ant-dropdown-menu {
-      min-width: 160px;
-    }
+// @import '../../../../../node_modules/antd/es/style/themes/default.less';
+
+.container > * {
+  // background-color: @popover-bg;
+  border-radius: 4px;
+  // box-shadow: @shadow-1-down;
+}
+
+@media screen and (max-width: 580) {
+  .container {
+    width: 100% !important;
+  }
+  .container > * {
+    border-radius: 0 !important;
   }
 }

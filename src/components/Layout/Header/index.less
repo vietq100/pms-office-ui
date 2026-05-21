@@ -1,0 +1,108 @@
+@import '../../../styles/variable';
+
+.trigger {
+  font-size: 18px;
+  line-height: 64px;
+  padding: 0 24px;
+  cursor: pointer;
+  transition: color 0.3s;
+}
+
+.trigger:hover {
+  color: #1890ff;
+}
+
+.logo {
+  height: 32px;
+  background: rgba(255, 255, 255, 0.2);
+  margin: 16px;
+}
+
+.header-container {
+  //box-shadow: 0 1px 4px rgba(0, 21, 41, 0.08);
+  display: flex;
+  .wrap-header-logo {
+    transition: all 0.3s;
+    .btn-fold-menu {
+      position: absolute;
+      top: 25px;
+      left: 10px;
+      font-size: 14px;
+      z-index: 1;
+      color: #b9b9b9;
+      &:hover {
+        color: #2f3d70;
+      }
+    }
+  }
+  .wrap-header {
+    flex: auto;
+    background: #ffffff;
+    box-shadow: 0 4px 12px rgba(29, 68, 73, 0.02);
+    //border-radius: 0 0 0 24px;
+    .wrap-project-select {
+      display: inline-flex;
+      flex: 0;
+      align-items: center;
+      height: 100%;
+      cursor: pointer;
+      transition: all 0.3s;
+    }
+    .wrap-profile {
+      display: flex;
+      align-items: center;
+      float: right;
+      height: 64px;
+      margin-left: auto;
+      overflow: hidden;
+
+      .wrap-item {
+        display: flex;
+        align-items: center;
+        cursor: pointer;
+        transition: all 0.3s;
+        height: 40px;
+        width: 40px;
+        background: rgba(29, 68, 73, 0.04);
+        border-radius: 50%;
+        margin-right: 12px;
+        justify-content: center;
+        color: rgba(29, 68, 73, 0.87);
+        position: relative;
+        line-height: normal;
+        &:hover {
+          background: rgba(0, 0, 0, 0.025);
+        }
+        &.border {
+          border-radius: 50%;
+          border: 1px solid @primary-color;
+        }
+        &:last-child {
+          margin-right: 10px;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 425px) {
+  .wrap-header {
+    .wrap-project-select {
+      display: inline-flex;
+      align-items: center;
+      max-width: 12.5rem; // or whatever width fits your layout
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+    }
+
+    .mr-1 {
+      display: inline-block;
+      max-width: 6.5rem; // adjust as needed
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      vertical-align: middle;
+    }
+  }
+}

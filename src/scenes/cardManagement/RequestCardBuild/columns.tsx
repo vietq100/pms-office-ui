@@ -1,5 +1,6 @@
 import { L } from '@lib/abpUtility'
 import AppConsts from '@lib/appconst'
+import './style.less'
 import { renderDateTime } from '@lib/helper'
 
 const { listCardRequestType, listCardRequestStatus, align } = AppConsts

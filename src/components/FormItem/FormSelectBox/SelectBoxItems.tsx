@@ -1,6 +1,7 @@
 import React from 'react'
 import SelectBoxItem from '@components/FormItem/FormSelectBox/SelectBoxItem'
 import { OptionModel } from '@models/global'
+import './SelectBoxItem.less'
 
 interface SelectBoxItemsProps {
   value?: any

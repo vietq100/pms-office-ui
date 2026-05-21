@@ -1,0 +1,66 @@
+@import '../../../../styles/variable';
+.create-receipt-content {
+  position: relative;
+  height: 100%;
+
+  .create-receipt-filter {
+    margin-top: 32px;
+    background-color: white;
+    padding: 16px !important;
+  }
+  .receipt-fees {
+    gap: 10px;
+    .create-receipt {
+      flex: 1;
+      .ant-row {
+        height: auto;
+        padding: 0 8px;
+        margin-bottom: 10px;
+      }
+      background-color: white;
+      padding: 8px 8px;
+      height: calc(100vh - 335px);
+      overflow-y: auto;
+
+      .receipt-group-package {
+        margin-bottom: 0;
+      }
+    }
+    .form-item-small {
+      .ant-form-item-row {
+        margin-bottom: 0;
+        .ant-form-item-control-input {
+          min-height: 22px;
+        }
+      }
+    }
+
+    .create-receipt-footer {
+      background-color: white;
+      padding: 16px;
+      .ant-col {
+        align-self: center;
+      }
+      .total {
+        color: @primary-color;
+      }
+      .price {
+        width: 150px;
+        display: inline-block;
+      }
+      .ant-divider-horizontal {
+        margin: 16px 0 !important;
+      }
+    }
+  }
+}
+
+.cash-advance-confirm {
+  width: 100%;
+  border-collapse: collapse;
+  th,
+  td {
+    border: 1px solid #ccc;
+    padding: 4px;
+  }
+}

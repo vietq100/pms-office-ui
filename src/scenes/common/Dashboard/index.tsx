@@ -1,5 +1,6 @@
 import * as React from 'react'
 import { Row, Col, Button, Select } from 'antd'
+import './index.less'
 
 import WorkOrderEmployee from './components/WorkOrderEmployee'
 import WorkOrderProject from './components/WorkOrderProject'

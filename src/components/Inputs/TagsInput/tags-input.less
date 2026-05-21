@@ -1,0 +1,42 @@
+@import '../../../styles/variable';
+
+.tags-input {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  margin: 0;
+  font-variant: tabular-nums;
+  list-style: none;
+  -webkit-font-feature-settings: 'tnum', 'tnum';
+  font-feature-settings: 'tnum', 'tnum';
+  position: relative;
+  display: inline-block;
+  width: 100%;
+  min-width: 0;
+  padding: 6.5px 11px;
+  color: #2f3d70;
+  font-size: 14px;
+  line-height: 1.75;
+  background-color: #fff;
+  background-image: none;
+  border: 1px solid @border-color;
+  border-radius: 6px;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+  gap: 5px;
+  input {
+    line-height: 20px;
+    padding: 0;
+  }
+  input:focus {
+    border: none;
+    line-height: 20px;
+    padding: 0;
+    outline-style: none;
+    box-shadow: none;
+  }
+
+  .ant-tag {
+    border-radius: 14px !important;
+    border-color: #f0f0f0 !important;
+  }
+}

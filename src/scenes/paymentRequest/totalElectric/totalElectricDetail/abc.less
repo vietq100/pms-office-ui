@@ -1,0 +1,40 @@
+@primary-bg: #f8fafc;
+@header-bg: #eef2f6;
+@row-bg: white;
+@border-color: #ddd;
+@hover-color: #096dd9;
+@edit-icon-color: #1890ff;
+
+.table-container {
+    border-radius: 8px;
+    overflow: hidden;
+    background: @primary-bg;
+    border: 1px solid rgb(214, 214, 214)
+}
+
+.table-header {
+    font-weight: bold;
+    background: @header-bg;
+    padding: 12px;
+    border-radius: 8px 8px 0 0;
+}
+
+.table-row {
+    background: @row-bg;
+    padding: 12px;
+    border-bottom: 1px solid @border-color;
+
+    &:last-child {
+        border-bottom: none;
+    }
+}
+
+.edit-icon {
+    cursor: pointer;
+    color: @edit-icon-color;
+    transition: color 0.3s;
+
+    &:hover {
+        color: @hover-color;
+    }
+}

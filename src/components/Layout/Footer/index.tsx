@@ -1,4 +1,5 @@
 import { Row, Col } from 'antd'
+import './index.less'
 
 const Footer = () => {
   return (

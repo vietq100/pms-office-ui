@@ -1,3 +1,4 @@
+import './components/comments.less'
 import withRouter from '@components/Layout/Router/withRouter'
 import { L } from '@lib/abpUtility'
 import ChatbotStore from '@stores/chatbotHistory/chatbotStore'

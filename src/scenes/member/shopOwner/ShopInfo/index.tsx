@@ -382,7 +382,7 @@ class ShopOwnerInfo extends AppComponentBase<IShopOwnerFormProps> {
                 <Col sm={{ span: 24, offset: 0 }}>
                   <Table
                     size="middle"
-                    rowKey={(record) => record.project.id}
+                    rowKey={(record: any) => record.project.id}
                     columns={columns}
                     dataSource={(shopOwnerProjectRoles || []).map((item) => item)}
                     scroll={{ y: 400 }}

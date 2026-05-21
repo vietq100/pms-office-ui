@@ -158,7 +158,7 @@ class DeductCashAdvancePreview extends AppComponentListBase<IProps, IState> {
             className="custom-ant-table custom-ant-row"
             columns={columns}
             loading={this.props.cashAdvanceStore.isLoading}
-            rowKey={(record) => record.id}
+            rowKey="id"
             scroll={{ x: 1000, y: 800, scrollToFirstRowOnChange: true }}
             pagination={false}
             expandable={{

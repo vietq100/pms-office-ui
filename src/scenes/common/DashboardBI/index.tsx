@@ -1,3 +1,4 @@
+import './index.less'
 
 import AppComponentBase from '@components/AppComponentBase'
 import Row from 'antd/lib/grid/row'

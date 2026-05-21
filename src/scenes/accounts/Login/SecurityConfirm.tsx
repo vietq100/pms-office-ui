@@ -1,6 +1,7 @@
 import { L } from '@lib/abpUtility'
 import { Button, Card, Input } from 'antd'
 import React from 'react'
+import './index.less'
 
 interface Props {
   loading: boolean | undefined

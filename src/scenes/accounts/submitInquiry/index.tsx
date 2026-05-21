@@ -1,3 +1,4 @@
+import './index.less'
 import * as React from 'react'
 import { Card, Col, Input, Row, Form, Button } from 'antd'
 import { LeftOutlined } from '@ant-design/icons'
@@ -61,7 +62,7 @@ class SubmitInquiry extends React.Component<ISubmitInquiry> {
             <Card className={this.state.isMobile ? 'card-mobie' : 'card-web'}>
               <div style={{ textAlign: 'center' }}>
                 <Button
-                  type="ghost"
+                  type="default" ghost
                   className="position-absolute"
                   icon={<LeftOutlined style={{ fontSize: '14px' }} />}
                   onClick={() => this.backToLogin()}

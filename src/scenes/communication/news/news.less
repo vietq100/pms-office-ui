@@ -1,0 +1,40 @@
+@import (once) url('../../../styles/variable');
+
+.news-title {
+  height: 50px;
+  padding: 16px 0;
+}
+
+.news-list {
+  background: white;
+  box-shadow: 1px 4px 8px 0 rgba(100, 100, 100, 0.07);
+  padding: 16px;
+  .news-list-meta {
+    padding-left: 16px;
+    .news-item-title {
+      font-size: 18px;
+    }
+    .news-list-detail {
+      font-size: 12px;
+      .news-item-detail {
+        padding-left: 4px;
+        padding-right: 8px;
+      }
+    }
+  }
+  .news-list-row {
+    padding-bottom: 16px;
+    & + .news-list-row {
+      padding-top: 16px;
+      border-top: 1px solid @border-color;
+    }
+  }
+  .news-empty {
+    color: rbga(#4444, 0.8);
+  }
+
+  .news-list-paging {
+    padding-top: 16px;
+    border-top: 1px solid @border-color;
+  }
+}

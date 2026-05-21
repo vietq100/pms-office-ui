@@ -16,6 +16,7 @@ import WrapPageScroll from '@components/WrapPageScroll'
 import { useNavigate } from 'react-router-dom'
 import NoRole from '@components/ComponentNoRole'
 import { portalLayouts } from '@components/Layout/Router/router.config'
+import './voucher.less'
 const { authorization } = AppConsts
 const { Title } = Typography
 

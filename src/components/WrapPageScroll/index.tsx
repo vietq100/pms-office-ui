@@ -4,6 +4,7 @@ import { Card } from 'antd'
 export interface IDataTableProps {
   renderActions: any
   disable?: boolean
+  children?: React.ReactNode
 }
 
 const WrapPageScroll: React.FunctionComponent<IDataTableProps> = ({ renderActions, disable = false, ...props }) => {

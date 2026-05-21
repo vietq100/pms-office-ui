@@ -13,6 +13,7 @@ import TeamStore from '@stores/team/teamStore'
 import PlanMaintenanceFilter from './components/Filter'
 import PlanMaintenanceList from './components/PlanMaintenanceList'
 
+import './plan-maintenance.less'
 import { StatisticItem } from '@components/Statisitc/StatisticItem'
 import withRouter from '@components/Layout/Router/withRouter'
 import { CaretRightOutlined } from '@ant-design/icons'

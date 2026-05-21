@@ -4,6 +4,7 @@ import DataTable from '@components/DataTable'
 import { Button, Col, Input, Modal, Row, Select, Table } from 'antd'
 import { inject, observer } from 'mobx-react'
 import Stores from '@stores/storeIdentifier'
+import '@scenes/feeStatement/receipt/components/receipt.less'
 
 import AppConst, { appPermissions } from '@lib/appconst'
 import getColumns from './columns'

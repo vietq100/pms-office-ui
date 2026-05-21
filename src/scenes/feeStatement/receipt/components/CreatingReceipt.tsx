@@ -18,6 +18,7 @@ import get from 'lodash/get'
 import { inject, observer } from 'mobx-react'
 import moment from 'moment-timezone/moment-timezone'
 import React from 'react'
+import './create-receipt.less'
 
 type FeeDetail = {
   fullUnitCode: string

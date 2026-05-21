@@ -23,40 +23,36 @@ const App: React.FC<IAppProps> = inject(
   observer((props) => {
     const [isLoading, setIsLoading] = React.useState(true)
     React.useEffect(() => {
-    const init = async () => {
-        try {
-          await props.sessionStore!.getCurrentLoginInformations()
+      const init = async () => {
+        await props.sessionStore!.getCurrentLoginInformations()
 
-          if (
-            !props.sessionStore!.currentLogin.user &&
-            window.location.pathname !== '/account/reset-password' &&
-            window.location.pathname !== '/account/login' &&
-            window.location.pathname !== '/submit/inquiry' &&
-            window.location.pathname !== '/submit/delete-account'
-          ) {
-            window.location.href = '/account/login'
-            return
-          }
-
-          if (
-            !!props.sessionStore!.currentLogin.user &&
-            props.sessionStore!.currentLogin.application.features['SignalR']
-          ) {
-            SignalRAspNetCoreHelper.initSignalR()
-          }
-
-          if (!!props.sessionStore!.currentLogin.user && localStorage.getItem(authorization.projectId)) {
-            await Promise.all([
-              props.sessionStore?.getMyProfilePicture(),
-              props.sessionStore!.getOwnProjects({}),
-              props.sessionStore!.getWebConfiguration()
-            ])
-          }
-        } catch (error) {
-          console.error('[App] init error:', error)
-        } finally {
-          setIsLoading(false)
+        if (
+          !props.sessionStore!.currentLogin.user &&
+          window.location.pathname !== '/account/reset-password' &&
+          window.location.pathname !== '/account/login' &&
+          window.location.pathname !== '/submit/inquiry' &&
+          window.location.pathname !== '/submit/delete-account'
+        ) {
+          window.location.href = '/account/login'
+          return
         }
+
+        if (
+          !!props.sessionStore!.currentLogin.user &&
+          props.sessionStore!.currentLogin.application.features['SignalR']
+        ) {
+          SignalRAspNetCoreHelper.initSignalR()
+        }
+
+        if (!!props.sessionStore!.currentLogin.user && localStorage.getItem(authorization.projectId)) {
+          await Promise.all([
+            props.sessionStore?.getMyProfilePicture(),
+            props.sessionStore!.getOwnProjects({}),
+            props.sessionStore!.getWebConfiguration()
+          ])
+        }
+
+        setIsLoading(false)
       }
 
       init()

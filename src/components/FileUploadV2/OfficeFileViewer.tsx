@@ -1,6 +1,6 @@
-import { initializeIcons } from '@uifabric/icons'
+// @uifabric/icons removed - not needed for iframe viewer
 
-initializeIcons()
+
 const OfficeFileViewer = ({ src }: any) => {
   const fileUrl = src
 

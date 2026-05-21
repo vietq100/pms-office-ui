@@ -8,6 +8,7 @@ import ContractOfficeStore from '@stores/project/contractOfficeStore'
 import Stores from '@stores/storeIdentifier'
 import { Button, Card, Col, Dropdown, Form, message, Modal, Row, Table, Tag } from 'antd'
 import dayjs from 'dayjs'
+import './style.less'
 
 import { inject, observer } from 'mobx-react'
 import { useEffect, useState } from 'react'

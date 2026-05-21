@@ -2,6 +2,7 @@ import React from 'react'
 import { Button, Col, Pagination, Row } from 'antd'
 import { CopyOutlined } from '@ant-design/icons'
 import { isGranted, L } from '../../lib/abpUtility'
+import './DataTable.less'
 
 export interface IDataTableProps {
   title?: string

@@ -4,7 +4,7 @@ import FileStore from '@stores/common/fileStore'
 import { message, Upload } from 'antd'
 import Modal from 'antd/lib/modal/Modal'
 import { useEffect, useState } from 'react'
-import logo from '@assets/images/logo-icon.png'
+import logo from 'src/assets/images/logo-icon.png'
 interface ImageUploadProps {
   type?: string
   parentId?: string

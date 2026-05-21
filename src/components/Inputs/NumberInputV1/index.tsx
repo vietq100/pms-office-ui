@@ -2,13 +2,13 @@ import React, { useEffect, useState } from 'react'
 import { Input } from 'antd'
 import { usePrevious } from '../../Hooks/usePrevious'
 import isEqual from 'lodash/isEqual'
-import { L } from '@lib/abpUtility'
+import { L } from 'src/lib/abpUtility'
 import {
   getCursortPositionAfterFormatNumber,
   inputNumberFormatter,
   inputNumberParse,
   numberExponentToLarge
-} from '@lib/helper'
+} from 'src/lib/helper'
 
 interface NumberInputV1Props {
   value?: number | string

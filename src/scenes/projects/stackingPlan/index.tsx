@@ -4,6 +4,7 @@ import { DragDropContext, Droppable, Draggable, DropResult } from '@hello-pangea
 import { reduce, sum } from 'lodash'
 import { L, isGranted } from '@lib/abpUtility'
 import { formatNumber, renderDate, renderOptions } from '@lib/helper'
+import './project-stacking-plan.less'
 import ProjectStore from '@stores/project/projectStore'
 import UnitStore from '@stores/project/unitStore'
 import { inject, observer } from 'mobx-react'
