@@ -1,6 +1,0 @@
-{
-  "sideEffects": false,
-  "main": "../../cjs/ui/date_range_box.js",
-  "module": "../../esm/ui/date_range_box.js",
-  "typings": "../date_range_box.d.ts"
-}
