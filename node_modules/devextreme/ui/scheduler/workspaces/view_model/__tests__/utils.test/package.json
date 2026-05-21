@@ -1,0 +1,5 @@
+{
+  "sideEffects": false,
+  "main": "../../../../../../cjs/ui/scheduler/workspaces/view_model/__tests__/utils.test.js",
+  "module": "../../../../../../esm/ui/scheduler/workspaces/view_model/__tests__/utils.test.js"
+}

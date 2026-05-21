@@ -1,0 +1,80 @@
+@page {
+  size: A4;
+  margin: 0;
+}
+@media print {
+  body {
+    width: 21cm;
+    height: 29.7cm;
+    font-size: 13px;
+  }
+
+  footer {
+    position: fixed;
+    bottom: 0;
+  }
+}
+
+.printContentNoVat .project-logo,
+.print-receipt .project-logo,
+.print-workorder .project-logo {
+  height: 100px;
+}
+.printContentNoVat .project-logo img,
+.printContentNoVat .savills-logo img,
+.print-receipt .project-logo img,
+.print-receipt .savills-logo img,
+.print-workorder .project-logo img,
+.print-workorder .savills-logo img {
+  width: auto;
+  height: auto;
+  max-width: 300px;
+  max-height: 100px;
+}
+.page-break {
+  page-break-after: always;
+}
+.print-dash-line {
+  border-bottom: 1px dashed black;
+}
+
+.print-workorder {
+  padding-left: 50px;
+}
+
+/* Card Column */
+.card-header h5 {
+  margin-bottom: 0;
+}
+
+@media (min-width: 576px) {
+  .card-columns-2 {
+    column-count: 2;
+  }
+
+  .card-columns-3 {
+    column-count: 3;
+    column-gap: 0.5rem;
+  }
+}
+
+/* Dashboard */
+.hide-button button,
+.hide-button dropdown-list {
+  display: none;
+}
+
+.card-print {
+  margin: 15px;
+}
+
+/* PRINT QR CODE*/
+.qr-code-align-center {
+  margin: 0 auto;
+}
+
+/* PRINT DASHBOARD */
+.print-dashboard-page .scrollVertical {
+  overflow-x: unset !important;
+  overflow-y: unset !important;
+}

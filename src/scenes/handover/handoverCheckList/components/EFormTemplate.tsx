@@ -1,0 +1,40 @@
+import { OptionModel } from '@models/global'
+import EFormStore from '@stores/eForm/eFormStore'
+import Stores from '@stores/storeIdentifier'
+import { inject, observer } from 'mobx-react'
+import { useEffect, useState } from 'react'
+import EFormSection from './EFormSection'
+import { efromStatusPublic } from '@lib/appconst'
+
+interface EFormTemplateProps {
+  eFormStore: EFormStore
+}
+const EFormTemplate = inject(Stores.EFormStore)(
+  observer(({ eFormStore }: EFormTemplateProps) => {
+    const [questionTypes, setQuestionTypes] = useState([] as OptionModel[])
+    useEffect(() => {
+      const initData = async () => {
+        await eFormStore.getQuestionTypes()
+        setQuestionTypes(OptionModel.assigns(eFormStore.questionTypes))
+      }
+
+      initData()
+    }, [])
+
+    return (
+      <div style={{ paddingBottom: '70px' }}>
+        {(eFormStore.editEForm.formPages || []).map((data, index) => (
+          <EFormSection
+            disabled={eFormStore.editEForm?.statusId === efromStatusPublic.PUBLISHED}
+            key={index}
+            formSectionIndex={index}
+            formSection={data}
+            formQuestionTypes={questionTypes}
+            eFormStore={eFormStore}
+          />
+        ))}
+      </div>
+    )
+  })
+)
+export default EFormTemplate

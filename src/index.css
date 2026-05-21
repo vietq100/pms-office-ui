@@ -1,0 +1,24 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  margin: 0 !important;
+  font-size: 16px;
+  font-family: 'Open Sans', sans-serif;
+  font-variant: tabular-nums;
+  background-color: #fff;
+  font-feature-settings: 'tnum';
+}
+.cke_dialog_tab[title='Upload'],
+.cke_dialog_tab[title='Link'] {
+  display: none !important;
+}
+input[type='number']::-webkit-inner-spin-button,
+input[type='number']::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+html {
+  overflow: hidden;
+}

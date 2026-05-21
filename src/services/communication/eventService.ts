@@ -1,0 +1,68 @@
+import type { PagedResultDto } from '../dto/pagedResultDto'
+import http from '../httpService'
+import { L, LNotification } from '@lib/abpUtility'
+import { notifyError, notifySuccess } from '@lib/helper'
+import { EventModel } from '../../models/communication/Event'
+
+class EventService {
+  public async create(body: EventModel) {
+    const result = await http.post('/api/services/app/Events/Create', body)
+    return result.data.result
+  }
+
+  public async update(body: any) {
+    const result = await http.put('/api/services/app/Events/Update', body)
+    return result.data.result
+  }
+
+  public async sendNotification(eventId) {
+    const result = await http.post('/api/services/app/Events/SendEventNotification', null, { params: { eventId } })
+    return result.data.result
+  }
+
+  public async delete(id: number, isActive) {
+    const result = await http.post('/api/services/app/Events/Active', { id }, { params: { isActive } })
+    return result.data
+  }
+
+  public async get(id: number): Promise<any> {
+    if (!id) {
+      notifyError(L('ERROR'), L('ENTITY_NOT_FOUND'))
+    }
+
+    const result = await http.get('/api/services/app/Events/Get', {
+      params: { id }
+    })
+    return result.data.result
+  }
+
+  public async getForEdit(id: number): Promise<any> {
+    if (!id) {
+      notifyError(L('ERROR'), L('ENTITY_NOT_FOUND'))
+    }
+
+    const result = await http.get('/api/services/app/Events/GetEventForEdit', {
+      params: { id }
+    })
+    return EventModel.assign(result.data.result)
+  }
+
+  public async getAll(params: any): Promise<PagedResultDto<any>> {
+    const res = await http.get('api/services/app/Events/GetAll', { params })
+    const { result } = res.data
+    result.items = EventModel.assigns(result.items || [])
+    return result
+  }
+
+  public notify(newsId: number) {
+    return http
+      .post('api/services/app/Events/SendEventNotification', null, {
+        params: { eventId: newsId }
+      })
+      .then(() => {
+        notifySuccess(LNotification('SUCCESS'), LNotification(L('NEWS_NOTIFICATION_SENT')))
+      })
+  }
+}
+
+export default new EventService()

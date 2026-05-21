@@ -1,0 +1,15 @@
+{
+  "remoteServiceBaseUrl": "https://office-api.sadec.co/",
+  "appBaseUrl": "https://dev-easylife.sadec.co/",
+  "appLayoutConfig": {
+    "loader": {
+      "enabled": false,
+      "type": "flowers",
+      "title": "{0} sleeps until Christmas",
+      "message": "{0} sleeps until Christmas",
+      "loadingType": "default",
+      "delayTime": 0
+    },
+    "title": "CPMS"
+  }
+}

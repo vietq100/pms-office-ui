@@ -1,0 +1,5 @@
+.dx-filemanager .dx-filemanager-container .dx-drawer-panel-content.dx-drawer-panel-content-initial {
+  min-width: 250px;
+  max-width: 300px;
+  display: none !important;
+}
